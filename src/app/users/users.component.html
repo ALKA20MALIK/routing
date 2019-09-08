@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class="col-xs-8">
+            <div class="row">
+                    <ul class="list-group">
+                        <li class="" *ngFor="let user of users" routerLinkActive='active' >
+                           <a [routerLink]="['/users',user.id,user.name]"  class="list-group-item"> {{user.name}}</a>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+
